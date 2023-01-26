@@ -52,3 +52,33 @@ First, we need to download ImageNet.
 !bash data/scripts/get_imagenet.sh --val
 !python classify/val.py --weights ./weigths/yolov5s-cls.pt --data ../datasets/imagenet
 ```
+
+
+## 3. Load  Dataset
+
+Next, we'll export our dataset into the right directory structure for training YOLOv5 classification to load into this notebook. Select the `Export` button at the top of the version page, `Folder Structure` type, and `show download code`.
+
+The ensures all our directories are in the right format:
+
+```
+dataset
+├── train
+│   ├── class-one
+│   │   ├── IMG_123.jpg
+│   └── class-two
+│       ├── IMG_456.jpg
+├── valid
+│   ├── class-one
+│   │   ├── IMG_789.jpg
+│   └── class-two
+│       ├── IMG_101.jpg
+├── test
+│   ├── class-one
+│   │   ├── IMG_121.jpg
+│   └── class-two
+│       ├── IMG_341.jpg
+```
+
+![](https://i.imgur.com/BF9BNR8.gif)
+
+
