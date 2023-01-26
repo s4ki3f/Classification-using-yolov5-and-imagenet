@@ -8,12 +8,16 @@ This notebook covers:
 *   Inference with out-of-the-box YOLOv5 classification on ImageNet
 *  Training YOLOv5 classification on custom data
 
+![download (2)](https://user-images.githubusercontent.com/29111757/214815490-cfb6ec63-0d51-410c-821c-cc9e36136d62.png)
+
+![download](https://user-images.githubusercontent.com/29111757/214815508-99a5b231-28d0-41a0-9dab-3a8ae572b12b.png)
+![download](https://user-images.githubusercontent.com/29111757/214815540-d9f41768-f71e-47f2-88d2-3eea7b0c5189.png)
 
 
 This notebook was created with Google Colab. [Click here](https://colab.research.google.com/github/s4ki3f/Lightning-Series/blob/main/YOLOv5_Classification_Tutorial.ipynb#scrollTo=5GYQX3of4QiW) to run it.
 <br>
 <div>
-  <a href="https://colab.research.google.com/github/s4ki3f/Lightning-Series/blob/main/YOLOv5_Classification_Tutorial.ipynb#scrollTo=5GYQX3of4QiW"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  <a href="https://colab.research.google.com/drive/1i54GX3lxt62EglNX2Vv-PwDqscCZt-Uo#scrollTo=zS5sAjlqNgSi#scrollTo=5GYQX3of4QiW"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
 <br>
 
