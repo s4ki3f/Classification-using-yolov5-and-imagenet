@@ -42,3 +42,13 @@ cls = [f'{x}-cls' for x in p5]  # classification models
 for x in cls:
     attempt_download(f'weights/yolov5{x}.pt')
 ```
+## 2. Optional Validatation to check imagenet models
+
+Use the `classify/val.py` script to run validation for the model. This will show us the model's performance on each class.
+
+First, we need to download ImageNet.
+
+```bash
+!bash data/scripts/get_imagenet.sh --val
+!python classify/val.py --weights ./weigths/yolov5s-cls.pt --data ../datasets/imagenet
+```
