@@ -82,3 +82,32 @@ dataset
 ![](https://i.imgur.com/BF9BNR8.gif)
 
 
+#Dataset used here are from, we can use roboflow lib to download dataset easily
+
+```bash
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="deO5u1tP8oXg2HyoSRT4")
+project = rf.workspace("tdc").project("cow-identification")
+dataset = project.version(1).download("folder")
+```
+
+## 4. Train On Custom Data 
+Here, we use the DATASET_NAME environment variable to pass our dataset to the `--data` parameter.
+
+Note: we're training for 100 epochs here. We're also starting training from the pretrained weights. Larger datasets will likely benefit from longer training. 
+
+##And we will be need of traning 5-6 times to tune to the hyperperameters to find the best perameter for best training output
+
+```python
+!python classify/train.py --model yolov5x-cls.pt --data $DATASET_NAME --epochs 100 --img 128 
+```
+
+## 5. Validate Your Custom Model
+
+Repeat step 2 from above to test and validate your custom model.
+
+```python
+!python classify/val.py --weights runs/train-cls/exp/weights/best.pt --data ../datasets/$DATASET_NAME
+```
