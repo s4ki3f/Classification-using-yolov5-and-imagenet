@@ -79,7 +79,6 @@ dataset
 │       ├── IMG_341.jpg
 ```
 
-![](https://i.imgur.com/BF9BNR8.gif)
 
 
 #Dataset used here are from, we can use roboflow lib to download dataset easily
